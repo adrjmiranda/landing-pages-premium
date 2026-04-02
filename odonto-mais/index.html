@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+
+<html class="light" lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "tertiary-fixed-dim": "#c6c6c6",
+              "surface-container": "#eeeeee",
+              "tertiary": "#3b3c3c",
+              "on-surface": "#1a1c1c",
+              "secondary-fixed-dim": "#c0c8c5",
+              "on-surface-variant": "#3f4943",
+              "surface-bright": "#f9f9f9",
+              "secondary": "#58605d",
+              "surface-tint": "#186b4c",
+              "on-primary-container": "#89d6b0",
+              "surface": "#f9f9f9",
+              "on-tertiary-fixed-variant": "#464747",
+              "primary-container": "#005f41",
+              "on-background": "#1a1c1c",
+              "on-primary-fixed-variant": "#005137",
+              "surface-dim": "#dadada",
+              "inverse-on-surface": "#f1f1f1",
+              "on-secondary-fixed": "#161d1b",
+              "surface-variant": "#e2e2e2",
+              "primary-fixed-dim": "#89d6b0",
+              "error-container": "#ffdad6",
+              "on-error-container": "#93000a",
+              "primary": "#00452e",
+              "background": "#f9f9f9",
+              "on-primary-fixed": "#002114",
+              "surface-container-high": "#e8e8e8",
+              "on-error": "#ffffff",
+              "surface-container-low": "#f3f3f3",
+              "surface-container-lowest": "#ffffff",
+              "on-tertiary-container": "#c7c7c7",
+              "on-secondary-container": "#5e6663",
+              "outline-variant": "#bec9c1",
+              "on-tertiary-fixed": "#1a1c1c",
+              "on-primary": "#ffffff",
+              "inverse-primary": "#89d6b0",
+              "inverse-surface": "#2f3131",
+              "surface-container-highest": "#e2e2e2",
+              "outline": "#6f7a73",
+              "secondary-fixed": "#dce4e0",
+              "on-secondary": "#ffffff",
+              "secondary-container": "#dce4e0"
+            },
+            fontFamily: {
+              "headline": ["Manrope"],
+              "body": ["Manrope"],
+              "label": ["Manrope"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+      body { font-family: 'Manrope', sans-serif; }
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .fluid-shape {
+        clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%, 15% 50%);
+      }
+      .tonal-transition {
+        transition: background-color 0.3s ease;
+      }
+    </style>
+</head>
+<body class="bg-background text-on-surface antialiased">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-white/70 dark:bg-slate-900/70 backdrop-blur-xl shadow-[0_8px_32px_0_rgba(0,95,65,0.05)]">
+<div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto w-full">
+<div class="text-2xl font-black tracking-tighter text-emerald-800 dark:text-emerald-300">Odonto+</div>
+<div class="hidden md:flex items-center space-x-8">
+<a class="text-emerald-700 dark:text-emerald-400 border-b-2 border-emerald-600 pb-1 font-manrope tracking-tight text-sm font-semibold uppercase" href="#">Início</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-emerald-600 transition-colors font-manrope tracking-tight text-sm font-semibold uppercase" href="#">Especialidades</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-emerald-600 transition-colors font-manrope tracking-tight text-sm font-semibold uppercase" href="#">Sobre Nós</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-emerald-600 transition-colors font-manrope tracking-tight text-sm font-semibold uppercase" href="#">Agendamento</a>
+</div>
+<button class="bg-primary-container text-on-primary hover:scale-105 transition-transform duration-300 px-6 py-2.5 rounded-full font-manrope tracking-tight text-sm font-semibold uppercase active:scale-95 active:duration-75">
+                AGENDAR CONSULTA
+            </button>
+</div>
+</nav>
+<main class="pt-24 overflow-hidden">
+<!-- Hero Section -->
+<section class="relative min-h-[921px] flex items-center px-8 md:px-16 overflow-hidden">
+<!-- Fluid background shapes -->
+<div class="absolute top-[-10%] right-[-5%] w-[60%] h-[120%] bg-gradient-to-br from-primary-container/10 to-transparent rounded-full blur-[120px] -z-10"></div>
+<div class="absolute bottom-[-20%] left-[-10%] w-[40%] h-[80%] bg-gradient-to-tr from-primary-container/5 to-transparent rounded-full blur-[100px] -z-10"></div>
+<div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center w-full">
+<div class="space-y-8 z-10">
+<div class="inline-flex items-center gap-2 px-4 py-2 bg-primary-container/5 rounded-full border border-primary-container/10">
+<span class="material-symbols-outlined text-primary-container text-sm">verified</span>
+<span class="text-xs font-bold uppercase tracking-widest text-primary-container">Referência em Odontologia Digital</span>
+</div>
+<h1 class="text-6xl md:text-8xl font-extrabold tracking-tighter leading-[0.95] text-on-surface">
+                        Excelência em <span class="text-primary-container">Odontologia</span> Especializada
+                    </h1>
+<p class="text-xl text-on-surface-variant max-w-xl font-light leading-relaxed">
+                        Transformamos sorrisos com precisão tecnológica e cuidado humano. Sinta a confiança de um tratamento planejado nos mínimos detalhes.
+                    </p>
+<div class="flex flex-wrap gap-4 pt-4">
+<button class="px-8 py-5 bg-primary-container text-white rounded-full font-bold tracking-tight hover:scale-105 transition-all shadow-xl shadow-primary-container/20">
+                            AGENDAR CONSULTA
+                        </button>
+<button class="px-8 py-5 border border-outline-variant text-on-surface rounded-full font-bold tracking-tight hover:bg-surface-container-low transition-all">
+                            CONHECER CLÍNICA
+                        </button>
+</div>
+</div>
+<div class="relative group h-full flex justify-end">
+<div class="absolute -inset-4 bg-primary-container/5 blur-3xl rounded-full scale-90 group-hover:scale-100 transition-transform duration-700"></div>
+<div class="relative w-full aspect-[4/5] rounded-[3rem] overflow-hidden shadow-2xl">
+<img class="w-full h-full object-cover" data-alt="portrait of a confident modern female dentist in clinical white attire, smiling warmly in a high-tech medical environment with soft studio lighting" src="assets/dentist.jpg"/>
+</div>
+<!-- Floating Stat Badge -->
+<div class="absolute bottom-10 -left-10 bg-white/90 backdrop-blur-xl p-6 rounded-3xl shadow-2xl border border-white/50 max-w-[200px]">
+<div class="flex items-center gap-3 mb-2">
+<div class="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-white text-lg">medical_services</span>
+</div>
+<span class="text-xs font-bold uppercase text-primary-container">Elite Care</span>
+</div>
+<p class="text-sm font-semibold text-on-surface">Atendimento VIP personalizado para seu conforto.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Stats Layer -->
+<section class="py-16 px-8">
+<div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-12 border-y border-outline-variant/15 py-12">
+<div class="flex flex-col">
+<span class="text-5xl font-black text-primary-container tracking-tighter">+10 Anos</span>
+<span class="text-sm font-bold uppercase tracking-widest text-on-surface-variant mt-2">De Experiência</span>
+</div>
+<div class="flex flex-col">
+<span class="text-5xl font-black text-primary-container tracking-tighter">+5000</span>
+<span class="text-sm font-bold uppercase tracking-widest text-on-surface-variant mt-2">Sorrisos Transformados</span>
+</div>
+<div class="flex flex-col">
+<span class="text-5xl font-black text-primary-container tracking-tighter">Equipe Elite</span>
+<span class="text-sm font-bold uppercase tracking-widest text-on-surface-variant mt-2">Especialistas Renomados</span>
+</div>
+</div>
+</section>
+<!-- Service Hub (Bento Grid) -->
+<section class="py-24 px-8 bg-surface-container-low">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
+<div class="max-w-2xl">
+<h2 class="text-4xl md:text-5xl font-extrabold tracking-tighter text-on-surface mb-6">
+                            Tratamentos de <span class="text-primary-container">Alta Performance</span>
+</h2>
+<p class="text-lg text-on-surface-variant font-light">
+                            Nossa clínica utiliza as tecnologias mais avançadas de 2026 para garantir resultados rápidos, indolores e esteticamente perfeitos.
+                        </p>
+</div>
+<a class="group flex items-center gap-3 text-primary-container font-bold uppercase tracking-widest text-sm" href="#">
+                        Ver todos os serviços
+                        <span class="material-symbols-outlined group-hover:translate-x-2 transition-transform">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Card 1 -->
+<div class="group bg-surface-container-lowest p-8 rounded-[2.5rem] shadow-sm hover:shadow-xl transition-all duration-500 flex flex-col justify-between min-h-[420px]">
+<div>
+<div class="w-16 h-16 rounded-2xl bg-primary-container/10 flex items-center justify-center mb-8 group-hover:bg-primary-container group-hover:text-white transition-colors duration-500">
+<span class="material-symbols-outlined text-3xl">dentistry</span>
+</div>
+<h3 class="text-2xl font-bold tracking-tight text-on-surface mb-4">Implantes e Próteses</h3>
+<p class="text-on-surface-variant leading-relaxed mb-6">
+                                Reabilitação oral completa com tecnologia de carga imediata e materiais biocompatíveis de última geração.
+                            </p>
+</div>
+<div class="w-full h-40 rounded-2xl overflow-hidden grayscale group-hover:grayscale-0 transition-all duration-700">
+<img class="w-full h-full object-cover" data-alt="high-tech dental implant titanium component on a clinical white surface with precision macro lighting" src="assets/implant.jpg"/>
+</div>
+</div>
+<!-- Card 2 (Featured) -->
+<div class="group bg-primary-container p-8 rounded-[2.5rem] shadow-2xl flex flex-col justify-between min-h-[420px] text-white">
+<div>
+<div class="w-16 h-16 rounded-2xl bg-white/20 flex items-center justify-center mb-8">
+<span class="material-symbols-outlined text-3xl" style="font-variation-settings: 'FILL' 1;">orthopedics</span>
+</div>
+<h3 class="text-2xl font-bold tracking-tight mb-4">Ortodontia Especializada</h3>
+<p class="text-primary-fixed-dim leading-relaxed mb-6">
+                                Alinhadores invisíveis e braquetes estéticos para um tratamento discreto, rápido e extremamente preciso.
+                            </p>
+</div>
+<div class="w-full h-40 rounded-2xl overflow-hidden opacity-90 group-hover:opacity-100 transition-opacity">
+<img class="w-full h-full object-cover" data-alt="close up of transparent invisible teeth aligners on a sleek modern dental tray with cool medical lighting" src="assets/aligners.jpg"/>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="group bg-surface-container-lowest p-8 rounded-[2.5rem] shadow-sm hover:shadow-xl transition-all duration-500 flex flex-col justify-between min-h-[420px]">
+<div>
+<div class="w-16 h-16 rounded-2xl bg-primary-container/10 flex items-center justify-center mb-8 group-hover:bg-primary-container group-hover:text-white transition-colors duration-500">
+<span class="material-symbols-outlined text-3xl">flare</span>
+</div>
+<h3 class="text-2xl font-bold tracking-tight text-on-surface mb-4">Estética Dental &amp; Harmonização</h3>
+<p class="text-on-surface-variant leading-relaxed mb-6">
+                                Facetas de porcelana e lentes de contato dental criadas por CAD/CAM para o desenho perfeito do seu sorriso.
+                            </p>
+</div>
+<div class="w-full h-40 rounded-2xl overflow-hidden grayscale group-hover:grayscale-0 transition-all duration-700">
+<img class="w-full h-full object-cover" data-alt="professional dental aesthetic tools and porcelain veneers displayed on a clean medical workstation with soft shadows" src="assets/veneers.jpg"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Secondary Content Area / Experience -->
+<section class="py-24 px-8 overflow-hidden">
+<div class="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-20">
+<div class="lg:w-1/2 relative">
+<div class="absolute -top-12 -left-12 w-48 h-48 bg-primary-container/10 rounded-full blur-2xl"></div>
+<div class="relative rounded-[3rem] overflow-hidden shadow-3xl">
+<img class="w-full h-auto" data-alt="modern dental clinic interior with ergonomic medical chairs, large windows, and futuristic clean aesthetic with green accents" src="assets/clinic.jpg"/>
+</div>
+<div class="absolute -bottom-8 -right-8 p-8 bg-white rounded-3xl shadow-2xl border border-outline-variant/10 max-w-[240px]">
+<span class="text-3xl font-black text-primary-container">ISO 9001</span>
+<p class="text-xs font-bold uppercase tracking-widest text-on-surface-variant mt-2">Certificação Internacional de Qualidade</p>
+</div>
+</div>
+<div class="lg:w-1/2">
+<h2 class="text-4xl md:text-5xl font-extrabold tracking-tighter text-on-surface mb-8 leading-tight">
+                        A Tecnologia a Serviço do Seu Bem-Estar
+                    </h2>
+<ul class="space-y-6">
+<li class="flex gap-4">
+<span class="material-symbols-outlined text-primary-container mt-1" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<div>
+<h4 class="font-bold text-lg">Escaneamento 3D Intraoral</h4>
+<p class="text-on-surface-variant text-sm font-light">Eliminamos as moldagens tradicionais com câmeras digitais de alta precisão.</p>
+</div>
+</li>
+<li class="flex gap-4">
+<span class="material-symbols-outlined text-primary-container mt-1" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<div>
+<h4 class="font-bold text-lg">Sedação Consciente</h4>
+<p class="text-on-surface-variant text-sm font-light">Protocolos exclusivos para pacientes com fobia, garantindo total relaxamento.</p>
+</div>
+</li>
+<li class="flex gap-4">
+<span class="material-symbols-outlined text-primary-container mt-1" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<div>
+<h4 class="font-bold text-lg">Planejamento Digital DSD</h4>
+<p class="text-on-surface-variant text-sm font-light">Veja o resultado final do seu tratamento antes mesmo de começar.</p>
+</div>
+</li>
+</ul>
+<button class="mt-12 px-10 py-5 bg-on-surface text-white rounded-full font-bold tracking-tight hover:bg-primary-container transition-all flex items-center gap-3">
+                        Agendar sua Visita
+                        <span class="material-symbols-outlined">calendar_today</span>
+</button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full rounded-t-[3rem] mt-20 bg-slate-50 dark:bg-slate-950 tonal-shift-bg">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-12 py-16 max-w-7xl mx-auto">
+<div class="space-y-6">
+<div class="text-xl font-bold text-emerald-900 dark:text-emerald-100">Odonto+</div>
+<p class="font-manrope text-sm leading-relaxed text-slate-500 dark:text-slate-400">
+                    Redefinindo o padrão de cuidados odontológicos com tecnologia de ponta e especialistas de elite.
+                </p>
+<div class="flex gap-4">
+<div class="w-10 h-10 rounded-full bg-white shadow-sm flex items-center justify-center hover:bg-primary-container hover:text-white transition-all cursor-pointer">
+<span class="material-symbols-outlined text-xl">share</span>
+</div>
+<div class="w-10 h-10 rounded-full bg-white shadow-sm flex items-center justify-center hover:bg-primary-container hover:text-white transition-all cursor-pointer">
+<span class="material-symbols-outlined text-xl">location_on</span>
+</div>
+</div>
+</div>
+<div class="space-y-4">
+<h4 class="font-bold text-on-surface uppercase tracking-widest text-xs">Clínica</h4>
+<nav class="flex flex-col gap-3">
+<a class="font-manrope text-sm leading-relaxed text-slate-500 dark:text-slate-400 hover:text-emerald-500 transition-all" href="#">Especialidades</a>
+<a class="font-manrope text-sm leading-relaxed text-slate-500 dark:text-slate-400 hover:text-emerald-500 transition-all" href="#">Tecnologia</a>
+<a class="font-manrope text-sm leading-relaxed text-slate-500 dark:text-slate-400 hover:text-emerald-500 transition-all" href="#">Corpo Clínico</a>
+</nav>
+</div>
+<div class="space-y-4">
+<h4 class="font-bold text-on-surface uppercase tracking-widest text-xs">Informações</h4>
+<nav class="flex flex-col gap-3">
+<a class="font-manrope text-sm leading-relaxed text-slate-500 dark:text-slate-400 hover:text-emerald-500 transition-all" href="#">Localização</a>
+<a class="font-manrope text-sm leading-relaxed text-slate-500 dark:text-slate-400 hover:text-emerald-500 transition-all" href="#">Privacidade</a>
+<a class="font-manrope text-sm leading-relaxed text-slate-500 dark:text-slate-400 hover:text-emerald-500 transition-all" href="#">Termos</a>
+<a class="font-manrope text-sm leading-relaxed text-slate-500 dark:text-slate-400 hover:text-emerald-500 transition-all" href="#">Contato</a>
+</nav>
+</div>
+<div class="space-y-6">
+<h4 class="font-bold text-on-surface uppercase tracking-widest text-xs">Agende Agora</h4>
+<div class="p-6 bg-primary-container/5 rounded-3xl border border-primary-container/10">
+<p class="text-xs text-on-surface-variant mb-2">Segunda a Sexta: 08h - 20h</p>
+<p class="text-lg font-bold text-emerald-800 dark:text-emerald-300 mb-4">(73) 99999-9999</p>
+<button class="w-full py-3 bg-primary-container text-white rounded-xl text-sm font-bold uppercase tracking-tight opacity-80 hover:opacity-100 transition-all">
+                        Enviar WhatsApp
+                    </button>
+</div>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-12 py-8 border-t border-outline-variant/10 flex flex-col md:flex-row justify-between items-center gap-4">
+<span class="font-manrope text-xs leading-relaxed text-slate-500 dark:text-slate-400">© 2026 Odonto+ Elite Medical. Jequié, BA. Todos os direitos reservados.</span>
+<div class="flex gap-6">
+<span class="text-xs font-bold text-emerald-600">Design By Elite Clinical</span>
+</div>
+</div>
+</footer>
+</body></html>
