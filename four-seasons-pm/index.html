@@ -1,0 +1,588 @@
+<!doctype html>
+
+<html
+	class="dark"
+	lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta
+			content="width=device-width, initial-scale=1.0"
+			name="viewport" />
+		<title>Four Seasons Property Management | Charlotte, NC</title>
+		<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&amp;family=Newsreader:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap"
+			rel="stylesheet" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+			rel="stylesheet" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+			rel="stylesheet" />
+		<script id="tailwind-config">
+			tailwind.config = {
+				darkMode: 'class',
+				theme: {
+					extend: {
+						colors: {
+							'on-tertiary-fixed': '#3f0302',
+							secondary: '#a3d2aa',
+							'on-secondary-container': '#95c39d',
+							'tertiary-fixed': '#ffdad5',
+							'on-background': '#e5e2e1',
+							'on-error': '#690005',
+							'surface-dim': '#131313',
+							'secondary-fixed-dim': '#a3d2aa',
+							'on-secondary': '#0c381c',
+							error: '#ffb4ab',
+							'surface-container-high': '#2a2a2a',
+							'surface-container': '#201f1f',
+							outline: '#879487',
+							'inverse-surface': '#e5e2e1',
+							'on-primary-container': '#005025',
+							'error-container': '#93000a',
+							'surface-container-lowest': '#0e0e0e',
+							'on-error-container': '#ffdad6',
+							tertiary: '#ffbeb5',
+							'on-tertiary-fixed-variant': '#7b2e25',
+							'secondary-container': '#285233',
+							'on-tertiary': '#5d1811',
+							'surface-container-highest': '#353534',
+							surface: '#131313',
+							'outline-variant': '#3e4a3f',
+							'surface-variant': '#353534',
+							'tertiary-container': '#ff9587',
+							'on-secondary-fixed-variant': '#254f31',
+							'surface-tint': '#66dd8b',
+							'on-primary-fixed-variant': '#005227',
+							'inverse-on-surface': '#313030',
+							'on-primary': '#003919',
+							primary: '#6ee591',
+							'secondary-fixed': '#bfeec5',
+							'on-secondary-fixed': '#00210c',
+							background: '#131313',
+							'on-surface': '#e5e2e1',
+							'on-surface-variant': '#bdcabc',
+							'on-tertiary-container': '#782b23',
+							'primary-fixed-dim': '#66dd8b',
+							'surface-container-low': '#1c1b1b',
+							'primary-container': '#50c878',
+							'inverse-primary': '#006d36',
+							'surface-bright': '#3a3939',
+							'on-primary-fixed': '#00210c',
+							'primary-fixed': '#83fba5',
+							'tertiary-fixed-dim': '#ffb4a9',
+						},
+						fontFamily: {
+							headline: ['Newsreader', 'serif'],
+							body: ['Inter', 'sans-serif'],
+							label: ['Inter', 'sans-serif'],
+						},
+						borderRadius: {
+							DEFAULT: '0rem',
+							lg: '0rem',
+							xl: '0rem',
+							full: '9999px',
+						},
+					},
+				},
+			};
+		</script>
+		<style>
+			.material-symbols-outlined {
+				font-variation-settings:
+					'FILL' 0,
+					'wght' 400,
+					'GRAD' 0,
+					'opsz' 24;
+			}
+			body {
+				background-color: #131313;
+				color: #e5e2e1;
+				font-family: 'Inter', sans-serif;
+			}
+			.serif-italic {
+				font-family: 'Newsreader', serif;
+				font-style: italic;
+			}
+			.hero-gradient {
+				background: linear-gradient(
+					to bottom,
+					rgba(19, 19, 19, 0.4) 0%,
+					rgba(19, 19, 19, 1) 100%
+				);
+			}
+			.bento-card {
+				background-color: #1c1b1b;
+				transition: background-color 0.3s ease;
+			}
+			.bento-card:hover {
+				background-color: #2a2a2a;
+			}
+			.glass-nav {
+				background: rgba(19, 19, 19, 0.8);
+				backdrop-filter: blur(20px);
+			}
+		</style>
+	</head>
+	<body
+		class="bg-background text-on-background selection:bg-primary-container selection:text-on-primary-container">
+		<!-- TopAppBar -->
+		<header class="fixed top-0 left-0 right-0 z-50 glass-nav">
+			<div
+				class="flex justify-between items-center px-12 py-6 w-full max-w-screen-2xl mx-auto gap-4 xl:gap-0">
+				<div
+					class="flex flex-col font-['Newsreader'] font-bold text-white uppercase tracking-widest">
+					<p class="text-base sm:text-lg md:text-xl lg:text-2xl">
+						Four Seasons
+					</p>
+					<p class="text-[8px] sm:text-xs">Property Management, Inc.</p>
+				</div>
+				<nav class="hidden md:flex space-x-8 items-center">
+					<a
+						class="text-[#50C878] border-b-2 border-[#50C878] pb-1 font-body text-sm uppercase tracking-widest"
+						href="#"
+						>Home</a
+					>
+					<a
+						class="text-gray-400 hover:text-white transition-colors font-body text-sm uppercase tracking-widest"
+						href="#"
+						>Search Properties</a
+					>
+					<a
+						class="text-gray-400 hover:text-white transition-colors font-body text-sm uppercase tracking-widest"
+						href="#"
+						>Owner Services</a
+					>
+					<a
+						class="text-gray-400 hover:text-white transition-colors font-body text-sm uppercase tracking-widest"
+						href="#"
+						>Tenant Portal</a
+					>
+					<a
+						class="text-gray-400 hover:text-white transition-colors font-body text-sm uppercase tracking-widest"
+						href="#"
+						>Contact</a
+					>
+				</nav>
+				<button
+					class="bg-primary-container text-on-primary-container px-8 py-3 text-xs font-bold uppercase tracking-widest hover:brightness-110 transition-all duration-300">
+					Get Started
+				</button>
+			</div>
+		</header>
+		<main>
+			<!-- Hero Section -->
+			<section
+				class="relative h-screen w-full flex items-center justify-start overflow-hidden">
+				<div class="absolute inset-0 z-0">
+					<img
+						alt="Charlotte Skyline"
+						class="w-full h-full object-cover object-top"
+						data-alt="dramatic wide shot of Charlotte North Carolina skyline at twilight with glowing office buildings and deep blue sky reflecting in glass facades"
+						src="https://images.pexels.com/photos/20018783/pexels-photo-20018783.jpeg" />
+					<div class="absolute inset-0 hero-gradient"></div>
+				</div>
+				<div class="relative z-10 px-12 md:px-24 max-w-5xl">
+					<h1
+						class="font-headline text-6xl md:text-8xl text-white leading-[0.9] tracking-tighter mb-6">
+						Luxury <span class="serif-italic font-light">Management.</span
+						><br />
+						Investment <span class="text-primary">Growth.</span>
+					</h1>
+					<p
+						class="font-body text-lg md:text-xl text-on-surface-variant max-w-xl mb-10 leading-relaxed">
+						Charlotte's premier partner for sophisticated property stewardship.
+						We transform residential assets into high-performance investments
+						through meticulous care and elite tenant relations.
+					</p>
+					<div class="flex flex-wrap gap-6">
+						<button
+							class="bg-primary-container text-on-primary-container px-10 py-5 text-sm font-bold uppercase tracking-widest hover:scale-105 transition-transform">
+							SEARCH PREMIER PROPERTIES
+						</button>
+						<button
+							class="border-b-2 border-outline-variant hover:border-primary text-white px-4 py-5 text-sm font-bold uppercase tracking-widest transition-colors">
+							EXPLORE SERVICES
+						</button>
+					</div>
+				</div>
+			</section>
+			<!-- Action Hub (Bento-Grid) -->
+			<section class="py-32 px-12 max-w-screen-2xl mx-auto">
+				<div class="grid grid-cols-1 md:grid-cols-12 gap-6 h-auto md:h-[600px]">
+					<!-- Card 1: Owner Path -->
+					<div
+						class="md:col-span-7 bento-card p-12 flex flex-col justify-between group overflow-hidden relative">
+						<div class="relative z-10">
+							<span
+								class="text-primary text-sm font-bold uppercase tracking-widest mb-4 block"
+								>For Property Owners</span
+							>
+							<h2 class="font-headline text-4xl text-white mb-6">
+								List Your Property
+							</h2>
+							<p class="text-on-surface-variant max-w-md mb-8">
+								Maximize ROI with our data-driven marketing and white-glove
+								management services. We handle the complexity; you enjoy the
+								growth.
+							</p>
+						</div>
+						<div class="relative z-10">
+							<a
+								class="inline-flex items-center text-primary font-bold uppercase tracking-tighter group-hover:gap-4 transition-all"
+								href="#">
+								START CONSULTATION
+								<span class="material-symbols-outlined ml-2"
+									>arrow_forward</span
+								>
+							</a>
+						</div>
+						<!-- Decorative Element -->
+						<div
+							class="absolute right-[-10%] bottom-[-10%] opacity-10 group-hover:opacity-20 transition-opacity">
+							<span
+								class="material-symbols-outlined text-[200px]"
+								data-weight="fill"
+								>real_estate_agent</span
+							>
+						</div>
+					</div>
+					<!-- Card 2: Tenant Path -->
+					<div
+						class="md:col-span-5 bento-card p-12 flex flex-col justify-between group">
+						<div>
+							<span
+								class="text-primary text-sm font-bold uppercase tracking-widest mb-4 block"
+								>For Future Residents</span
+							>
+							<h2 class="font-headline text-4xl text-white mb-6">
+								Find Your Home
+							</h2>
+							<div class="flex flex-col gap-4">
+								<div
+									class="bg-surface-container-high p-4 flex items-center justify-between">
+									<span class="text-on-surface-variant text-sm"
+										>Desired Neighborhood...</span
+									>
+									<span class="material-symbols-outlined text-primary"
+										>search</span
+									>
+								</div>
+							</div>
+						</div>
+						<a
+							class="inline-flex items-center text-primary font-bold uppercase tracking-tighter group-hover:gap-4 transition-all mt-8"
+							href="#">
+							BROWSE LISTINGS
+							<span class="material-symbols-outlined ml-2">apartment</span>
+						</a>
+					</div>
+					<!-- Card 3: Resident Portal -->
+					<div
+						class="md:col-span-12 bento-card p-8 md:p-12 flex flex-col md:flex-row items-start md:items-center justify-between group">
+						<div class="flex items-center gap-8">
+							<div
+								class="w-16 h-16 bg-surface-container-highest flex items-center justify-center">
+								<span
+									class="material-symbols-outlined text-primary text-3xl"
+									data-weight="fill"
+									>shield_person</span
+								>
+							</div>
+							<div>
+								<h2 class="font-headline text-3xl text-white">
+									Resident Portal
+								</h2>
+								<p class="text-on-surface-variant">
+									Instant payments, maintenance tracking, and concierge
+									requests.
+								</p>
+							</div>
+						</div>
+						<div class="flex gap-4 mt-6 md:mt-0">
+							<button
+								class="bg-surface-container-highest text-white px-8 py-4 text-xs font-bold uppercase tracking-widest hover:bg-surface-container-high transition-colors">
+								MAKE PAYMENT
+							</button>
+							<button
+								class="bg-primary-container text-on-primary-container px-8 py-4 text-xs font-bold uppercase tracking-widest hover:brightness-110 transition-all">
+								LOG IN
+							</button>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- Featured Properties -->
+			<section class="bg-surface-container-lowest py-32 px-12">
+				<div class="max-w-screen-2xl mx-auto">
+					<div
+						class="flex flex-col md:flex-row justify-between items-end mb-20 gap-8">
+						<div class="max-w-2xl">
+							<h2 class="font-headline text-5xl md:text-7xl text-white mb-6">
+								Charlotte's <span class="serif-italic">Finest.</span>
+							</h2>
+							<p
+								class="text-on-surface-variant font-body uppercase tracking-widest text-sm">
+								A curated selection of available premium residences.
+							</p>
+						</div>
+						<a
+							class="text-primary font-bold uppercase tracking-widest border-b border-primary pb-1 hover:pb-2 transition-all"
+							href="#"
+							>View All 42 Listings</a
+						>
+					</div>
+					<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+						<!-- Property 1 -->
+						<div class="group cursor-pointer">
+							<div class="relative aspect-[4/5] overflow-hidden mb-6">
+								<img
+									alt="Modern Villa"
+									class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 scale-100 group-hover:scale-110"
+									data-alt="ultra-modern minimalist luxury villa with clean lines floor to ceiling glass windows and manicured landscape at dusk with warm interior lighting"
+									src="https://lh3.googleusercontent.com/aida-public/AB6AXuCkjAyFmGuz1-E9n85emkECQgTJjMfcbsl2nbPMIq4KFy3SUvUCPm5A7CTTyCkzrBsiWrc9YPVbCypIkH0PwrdS2LZpVFXUZnTvwghUtdRvqAsLQ0S6esETnT4MX0k-PHZNybB67DhpswFh7xOjKqIPxLHxvQF6kJRoiOHQXo5bzGI2xlGCVw1MfMrQj8DYsR63g3tm4uTPl65jZb7_zFmTXIQieC1t7a795Ll0BCa0Do3NKP6BZ_r5ZoyvnPHTRrGw2OZ4iX8LSQ" />
+								<div
+									class="absolute top-6 right-6 bg-surface-container p-4 text-primary font-bold">
+									$12,500/mo
+								</div>
+							</div>
+							<h3 class="font-headline text-2xl text-white mb-2">
+								The Glass House | Uptown
+							</h3>
+							<p
+								class="text-on-surface-variant text-sm uppercase tracking-widest">
+								3 Bed • 3.5 Bath • 3,200 SQFT
+							</p>
+						</div>
+						<!-- Property 2 -->
+						<div class="group cursor-pointer">
+							<div class="relative aspect-[4/5] overflow-hidden mb-6">
+								<img
+									alt="Penthouse Interior"
+									class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 scale-100 group-hover:scale-110"
+									data-alt="spacious open plan luxury penthouse interior with marble floors modern art high-end furniture and panoramic city views through large windows"
+									src="https://lh3.googleusercontent.com/aida-public/AB6AXuAjBWC9zxL-GypNsG_4IXpMwMfK7_I7MWlaAQLGhsQSLWs0gPSuA6O6Rc6kj8BIqxQuw6M2_0xhX-oWkpFD_i4JmoYk8dykB_439Km-ii6ThxZQBY1D-plnbEks071E8H3T1bOFCbR-Grw9QBdkFmNH7i2EyImrC7iXmZCEaITniizo6__PIn07_Jwuh4x95FmPGp_KcKDc81OvrIcJkVt3r70rpQOD4X_p4laAJbt7PHQZC_gjLovmOQ8n0dowWnWDSrtx_EmJ_w" />
+								<div
+									class="absolute top-6 right-6 bg-surface-container p-4 text-primary font-bold">
+									$8,200/mo
+								</div>
+							</div>
+							<h3 class="font-headline text-2xl text-white mb-2">
+								Ascent Terrace | South End
+							</h3>
+							<p
+								class="text-on-surface-variant text-sm uppercase tracking-widest">
+								2 Bed • 2 Bath • 1,850 SQFT
+							</p>
+						</div>
+						<!-- Property 3 -->
+						<div class="group cursor-pointer">
+							<div class="relative aspect-[4/5] overflow-hidden mb-6">
+								<img
+									alt="Estate Exterior"
+									class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 scale-100 group-hover:scale-110"
+									data-alt="stately modern brick mansion with professional landscape design stone walkway and evening architectural lighting highlighting the textures"
+									src="https://lh3.googleusercontent.com/aida-public/AB6AXuAqUuxRLekaAtB8dOjtv5hrs9uhpzG4i3DZCuIU4wkPYcX4HPFbKLwNYYR_3IwOnZMp2AE0dOdky2qiMtUO1I6VaejQP0lF3Hpf0D5B3C4KY5GCekmXihdWAgcjaTOfG_F-lZ4LiCiJzV-4Pe-qyZgngHj203WWR3u6Nn5ilaLn3s6B0dhTSbeXA3TULgaCwYNbrCAWwh3PGcbgsFnOZDoeDUFzjygSsMx237O60fkkNi29mXbIspmYhi17CEITB05WTKzi5hgasg" />
+								<div
+									class="absolute top-6 right-6 bg-surface-container p-4 text-primary font-bold">
+									$15,000/mo
+								</div>
+							</div>
+							<h3 class="font-headline text-2xl text-white mb-2">
+								The Ivy Estate | Myers Park
+							</h3>
+							<p
+								class="text-on-surface-variant text-sm uppercase tracking-widest">
+								5 Bed • 4.5 Bath • 5,400 SQFT
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- Trust Layer / Testimonials -->
+			<section class="py-32 px-12 border-t border-outline-variant/10">
+				<div
+					class="max-w-screen-2xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-24">
+					<div>
+						<h2 class="font-headline text-5xl text-white mb-12">
+							Trusted by Charlotte's most
+							<span class="serif-italic">discerning</span> investors.
+						</h2>
+						<div class="flex gap-16">
+							<div>
+								<span class="block text-4xl font-headline text-primary mb-2"
+									>98%</span
+								>
+								<span
+									class="block text-xs uppercase tracking-widest text-on-surface-variant"
+									>Tenant Retention</span
+								>
+							</div>
+							<div>
+								<span class="block text-4xl font-headline text-primary mb-2"
+									>$1.2B</span
+								>
+								<span
+									class="block text-xs uppercase tracking-widest text-on-surface-variant"
+									>Assets Managed</span
+								>
+							</div>
+						</div>
+					</div>
+					<div class="space-y-16">
+						<blockquote class="relative">
+							<span
+								class="material-symbols-outlined absolute -top-8 -left-8 text-6xl text-surface-container-highest opacity-30"
+								>format_quote</span
+							>
+							<p
+								class="text-xl text-white font-body leading-relaxed italic mb-6">
+								"The transition to Four Seasons was seamless. Their attention to
+								detail in maintenance and the quality of tenants they've placed
+								has significantly increased my property's value."
+							</p>
+							<cite class="not-italic flex items-center gap-4">
+								<div
+									class="w-12 h-12 bg-surface-container-high rounded-full overflow-hidden">
+									<img
+										alt="Portrait"
+										data-alt="close-up portrait of a professional man in a tailored suit with a confident expression in a softly lit office setting"
+										src="https://lh3.googleusercontent.com/aida-public/AB6AXuBmYDxV3snc4BrWWOhA6bSlZUgLeUOITLTsNgf-MYRsF9A_snLWTALajI3UBlrA_rUS1Yra2yRDKqBoL961hpIvrBT68CFGXzFadMF-5HCWAmLq2Eb59Y655dErqUZDwZsggpQGcpXsOV4sGqonf9q-Ub_bmMLwNkRJ8yPtpuJbCR7pa0NhFZeMoB7L_Sg-723iydsDVgj0fTaGVv7QO2yKA_Wui-oBvk9zDAsX52XMSww0fo5klI2dkeHCiFJed4FzWi0KJxV2WQ" />
+								</div>
+								<div>
+									<span
+										class="block text-white font-bold text-sm uppercase tracking-widest"
+										>Marcus J. Sterling</span
+									>
+									<span
+										class="block text-on-surface-variant text-xs uppercase tracking-tight"
+										>Investment Owner, 12 Units</span
+									>
+								</div>
+							</cite>
+						</blockquote>
+						<blockquote class="relative">
+							<p
+								class="text-xl text-white font-body leading-relaxed italic mb-6">
+								"As a tenant, I've never felt more respected. The maintenance
+								team is prompt, and the digital portal makes my life incredibly
+								easy. Truly a first-class experience."
+							</p>
+							<cite class="not-italic flex items-center gap-4">
+								<div
+									class="w-12 h-12 bg-surface-container-high rounded-full overflow-hidden">
+									<img
+										alt="Portrait"
+										data-alt="professional woman with a friendly smile in a bright contemporary urban apartment setting"
+										src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJ2ZGp0gBrYX1SVYvFZx1ZTDoREnyXeRCLlI5IHMoC-Yl9qZKdpn3zc-39KKg3q6WhQJYC7tHCHA8qlZuUj6r7OcTsb_HT6R_aOs8-jTOCIe7D-wOGufgWeoOlelEh5p8oYwilF_zkgy3nqM4vAccqalMpX92XlMcf9noe3yV18sAFdCQ3iudQlgqwLF8SDO0cz_tU5n4bWlY2SnV-bZEJwRTVCMZt_OJGic6AbFN3u60oRmQ6AUOkbs8quVWgMXzuaJkWFhBneg" />
+								</div>
+								<div>
+									<span
+										class="block text-white font-bold text-sm uppercase tracking-widest"
+										>Elena Vance</span
+									>
+									<span
+										class="block text-on-surface-variant text-xs uppercase tracking-tight"
+										>Resident since 2021</span
+									>
+								</div>
+							</cite>
+						</blockquote>
+					</div>
+				</div>
+			</section>
+		</main>
+		<!-- Footer -->
+		<footer class="bg-[#0e0e0e] border-t-0">
+			<div
+				class="grid grid-cols-1 md:grid-cols-3 gap-12 px-12 py-20 w-full max-w-screen-2xl mx-auto">
+				<div>
+					<div
+						class="text-xl font-['Newsreader'] text-[#50C878] mb-8 uppercase tracking-widest font-bold">
+						Four Seasons PM
+					</div>
+					<p
+						class="text-gray-500 font-['Inter'] text-sm leading-relaxed max-w-xs mb-8">
+						Defining the standard for luxury property management in the
+						Carolinas. Exceptional service, unmatched expertise.
+					</p>
+					<div class="flex gap-4">
+						<span
+							class="material-symbols-outlined text-gray-600 hover:text-primary cursor-pointer transition-colors"
+							>public</span
+						>
+						<span
+							class="material-symbols-outlined text-gray-600 hover:text-primary cursor-pointer transition-colors"
+							>share</span
+						>
+						<span
+							class="material-symbols-outlined text-gray-600 hover:text-primary cursor-pointer transition-colors"
+							>mail</span
+						>
+					</div>
+				</div>
+				<div class="grid grid-cols-2 gap-8">
+					<div class="flex flex-col gap-4">
+						<span
+							class="text-white font-bold text-xs uppercase tracking-widest mb-2"
+							>Company</span
+						>
+						<a
+							class="text-gray-600 hover:text-[#50C878] transition-colors text-xs uppercase tracking-widest"
+							href="#"
+							>Privacy Policy</a
+						>
+						<a
+							class="text-gray-600 hover:text-[#50C878] transition-colors text-xs uppercase tracking-widest"
+							href="#"
+							>Terms of Service</a
+						>
+						<a
+							class="text-gray-600 hover:text-[#50C878] transition-colors text-xs uppercase tracking-widest"
+							href="#"
+							>Accessibility</a
+						>
+					</div>
+					<div class="flex flex-col gap-4">
+						<span
+							class="text-white font-bold text-xs uppercase tracking-widest mb-2"
+							>Resources</span
+						>
+						<a
+							class="text-gray-600 hover:text-[#50C878] transition-colors text-xs uppercase tracking-widest"
+							href="#"
+							>Owner Resources</a
+						>
+						<a
+							class="text-gray-600 hover:text-[#50C878] transition-colors text-xs uppercase tracking-widest"
+							href="#"
+							>Tenant FAQ</a
+						>
+					</div>
+				</div>
+				<div>
+					<span
+						class="text-white font-bold text-xs uppercase tracking-widest mb-6 block"
+						>Our Office</span
+					>
+					<p class="text-gray-500 font-['Inter'] text-sm mb-4 leading-relaxed">
+						101 S Tryon St, Suite 2700<br />
+						Charlotte, NC 28280
+					</p>
+					<p class="text-primary font-bold text-sm tracking-widest">
+						+1 (704) 555-0198
+					</p>
+				</div>
+			</div>
+			<div
+				class="px-12 py-8 border-t border-outline-variant/10 max-w-screen-2xl mx-auto">
+				<p
+					class="font-['Inter'] text-xs uppercase tracking-widest text-gray-600 text-center">
+					© 2026 Four Seasons Property Management. All Rights Reserved. Equal
+					Housing Opportunity.
+				</p>
+			</div>
+		</footer>
+	</body>
+</html>
