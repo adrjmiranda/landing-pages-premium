@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>IHFC Jequié | Instituto de Harmonização Facial e Corporal</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&amp;family=Manrope:wght@300;400;600;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "background": "#131313",
+                    "secondary-fixed": "#f4e0bf",
+                    "outline": "#99907c",
+                    "surface-container-highest": "#353534",
+                    "secondary-fixed-dim": "#d7c4a5",
+                    "primary": "#f1c97d",
+                    "on-primary-fixed-variant": "#5d4201",
+                    "on-tertiary-fixed-variant": "#5c4208",
+                    "surface-container-lowest": "#0e0e0e",
+                    "surface-container-high": "#2a2a2a",
+                    "on-error": "#690005",
+                    "secondary": "#d7c4a5",
+                    "primary-fixed": "#ffdea5",
+                    "on-primary-fixed": "#261900",
+                    "error": "#ffb4ab",
+                    "surface-dim": "#131313",
+                    "surface-bright": "#3a3939",
+                    "on-primary": "#412d00",
+                    "inverse-on-surface": "#313030",
+                    "surface-variant": "#353534",
+                    "inverse-primary": "#775a19",
+                    "surface-tint": "#e9c176",
+                    "on-secondary-fixed-variant": "#52452d",
+                    "on-background": "#e5e2e1",
+                    "inverse-surface": "#e5e2e1",
+                    "on-secondary-container": "#c9b697",
+                    "tertiary-fixed": "#ffdea7",
+                    "on-primary-container": "#5b4000",
+                    "surface-container-low": "#1c1b1b",
+                    "surface": "#131313",
+                    "on-surface-variant": "#d0c5af",
+                    "on-secondary": "#3a2f19",
+                    "outline-variant": "#4d4635",
+                    "on-tertiary-container": "#5b4106",
+                    "on-error-container": "#ffdad6",
+                    "tertiary-fixed-dim": "#e8c17c",
+                    "primary-fixed-dim": "#e9c176",
+                    "surface-container": "#201f1f",
+                    "primary-container": "#d4ad65",
+                    "error-container": "#93000a",
+                    "on-surface": "#e5e2e1",
+                    "tertiary-container": "#d3ae6b",
+                    "on-tertiary-fixed": "#271900",
+                    "on-secondary-fixed": "#241a06",
+                    "tertiary": "#f0c984",
+                    "secondary-container": "#55472f",
+                    "on-tertiary": "#412d00"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Noto Serif"],
+                    "body": ["Manrope"],
+                    "label": ["Manrope"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .signature-line {
+            height: 0.5px;
+            background: linear-gradient(90deg, transparent, #4d4635, transparent);
+        }
+        .glass-nav {
+            background: rgba(19, 19, 19, 0.7);
+            backdrop-filter: blur(20px);
+        }
+        .gold-gradient-text {
+            background: linear-gradient(45deg, #f1c97d, #d4ad65);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .gold-gradient-bg {
+            background: linear-gradient(45deg, #f1c97d, #d4ad65);
+        }
+        .asymmetric-image-container::after {
+            content: '';
+            position: absolute;
+            top: 2rem;
+            left: 2rem;
+            right: -1rem;
+            bottom: -1rem;
+            border: 0.5px solid rgba(241, 201, 125, 0.3);
+            z-index: -1;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 glass-nav border-b border-[#d4af37]/15">
+<div class="flex justify-between items-center px-8 py-4 max-w-full mx-auto">
+<div class="font-headline text-xl tracking-tight text-primary">IHFC Jequié</div>
+<!-- Desktop Links -->
+<div class="hidden md:flex items-center space-gap-8 gap-8">
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label text-xs tracking-[0.1em] uppercase" href="#especialidades">Especialidades</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label text-xs tracking-[0.1em] uppercase" href="#sobre">Sobre</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label text-xs tracking-[0.1em] uppercase" href="#contato">Contato</a>
+<button class="gold-gradient-bg text-on-primary font-label text-xs tracking-[0.1em] uppercase px-6 py-3 rounded-lg hover:opacity-90 transition-all">Agendar Consulta</button>
+</div>
+<!-- Mobile Menu Toggle (Simplified) -->
+<div class="md:hidden">
+<span class="material-symbols-outlined text-primary">menu</span>
+</div>
+</div>
+</nav>
+<!-- Hero Section -->
+<header class="relative min-h-screen flex items-center pt-20 overflow-hidden">
+<div class="absolute inset-0 z-0">
+<div class="absolute inset-0 bg-gradient-to-r from-background via-background/80 to-transparent z-10"></div>
+<img class="w-full h-full object-cover grayscale opacity-40" data-alt="Close-up of elegant medical procedure tools on dark marble with dramatic warm golden lighting and premium aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-hWASOUKsYbwY1ppmyN-gPutLJk49BK_JOZzCxpZA-ikbZbzQN657TjLSPlbi6Cukzki2iC5h1QH36JkJQzWNXLjM00ZY32neyLYmBMmXcLJgJ3BHs_mevJswHAERxBjLLUt7wrHn8J3eJ7uK_q62-6ag4HdEUOzc6_K3IplWY4HZEcJI2EABGepOuN23FD_yPyl3Sn9Jr2mPAXzUaa0d1Ft6mYo1YGI1gMWvgnesYEv3MBFaArNZ124bHOa7wX4cK62ycoyhD0_i"/>
+</div>
+<div class="container mx-auto px-8 relative z-20">
+<div class="max-w-3xl">
+<span class="font-label text-primary text-xs tracking-[0.3em] uppercase mb-4 block">Bem-vindo ao IHFC Jequié</span>
+<h1 class="font-headline text-5xl md:text-7xl lg:text-8xl text-on-background leading-tight mb-8 tracking-tighter">
+                    A Ciência da <br/>
+<span class="gold-gradient-text">Beleza Superior</span>
+</h1>
+<p class="text-on-surface-variant text-lg md:text-xl max-w-xl leading-relaxed mb-10 font-light">
+                    Instituto de Harmonização Facial e Corporal. Onde a excelência clínica encontra a estética de luxo para revelar sua melhor versão.
+                </p>
+<div class="flex flex-col sm:flex-row gap-4">
+<button class="gold-gradient-bg text-on-primary font-label text-sm tracking-[0.1em] uppercase px-10 py-5 rounded-lg font-bold shadow-2xl hover:translate-y-[-2px] transition-all">
+                        Agendar Consulta
+                    </button>
+<button class="border border-outline-variant text-primary font-label text-sm tracking-[0.1em] uppercase px-10 py-5 rounded-lg hover:bg-surface-container-low transition-all">
+                        Conheça o Instituto
+                    </button>
+</div>
+</div>
+</div>
+<div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce hidden md:block">
+<span class="material-symbols-outlined text-outline text-3xl">expand_more</span>
+</div>
+</header>
+<!-- Editorial Quote Section -->
+<section class="py-24 bg-surface flex justify-center text-center px-8">
+<div class="max-w-4xl">
+<div class="signature-line w-24 mx-auto mb-12"></div>
+<h2 class="font-headline text-3xl md:text-4xl text-on-background italic leading-relaxed">
+                "Não criamos novos rostos. Revelamos a harmonia que já existe em você, através de precisão técnica e olhar artístico."
+            </h2>
+<p class="font-label text-primary text-xs tracking-widest uppercase mt-8">— Direção Clínica, IHFC</p>
+</div>
+</section>
+<!-- Specialties Bento Grid -->
+<section class="py-24 bg-surface-dim" id="especialidades">
+<div class="container mx-auto px-8">
+<div class="flex flex-col md:flex-row justify-between items-end mb-20 gap-8">
+<div>
+<span class="font-label text-primary text-xs tracking-[0.2em] uppercase mb-4 block">Nossa Expertise</span>
+<h2 class="font-headline text-4xl md:text-5xl text-on-background tracking-tight">Especialidades</h2>
+</div>
+<div class="max-w-md text-right">
+<p class="text-on-surface-variant text-sm leading-relaxed">Procedimentos de alta performance com tecnologia de última geração para resultados naturais e duradouros.</p>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+<!-- Main Featured Card -->
+<div class="md:col-span-8 group relative overflow-hidden rounded-xl bg-surface-container-high h-[500px]">
+<img class="absolute inset-0 w-full h-full object-cover opacity-50 group-hover:scale-105 transition-transform duration-700" data-alt="Detailed close-up of skin treatment process with professional medical lighting and soft focus high fashion style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD5xx7Fw2mmgeTHgDTSnowoZen9x1BXZCKwQlEkDMGW4FZbViwy0ZClsG2zvZxI4bLqIpJlx5npI0MxOSgVRbvPpVeFQv7QHCivah-R5_6BYAUoi-aGG4adu4P08QtK-pqtFBYpPEFiVAul0VFQkdVLlmRFuYCgUsW59nkuElP9mmkKHqD9x7vS9UV1dYOR5YvMMh8NdVVuAuXvVdwgEhCZZDmsr3JTFUBnImXKfvS0TtXTiH1HBI76k1B-MMUoHEmjQAKfja3oHKka"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent"></div>
+<div class="absolute bottom-0 p-10">
+<span class="bg-primary text-on-primary font-label text-[10px] px-3 py-1 mb-4 inline-block tracking-widest uppercase rounded-full">Exclusividade</span>
+<h3 class="font-headline text-4xl text-on-background mb-4">Harmonização Facial</h3>
+<p class="text-on-surface-variant max-w-md mb-6">Equilíbrio, simetria e naturalidade através de protocolos personalizados de preenchimento e bioestimulação.</p>
+<a class="text-primary font-label text-xs tracking-[0.1em] uppercase border-b border-primary/30 pb-1 hover:border-primary transition-all" href="#">Ver Detalhes</a>
+</div>
+</div>
+<!-- Secondary Card 1 -->
+<div class="md:col-span-4 group relative overflow-hidden rounded-xl bg-surface-container-low h-[500px]">
+<img class="absolute inset-0 w-full h-full object-cover opacity-30 group-hover:scale-105 transition-transform duration-700" data-alt="Abstract aesthetic shot of medical laboratory glass and golden liquid for high-end aesthetic medicine" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAxVoe0NlNdBSBDnpgQsnJ4kAAgbV_gNWt7SMzLKTIA2yoLwZDFQ_Zmv5I4-LNZZbWj39rBa-YUsUKXxE6vRRv-luVM_jjL3eoKdpIsPBI3Da97_OGfINcff41TtmJc3gQIkJGwEt8C_fOY62D0HjTTEkelGJw9-RFwOlW5knbriNG3q8MTW0yCNejC2fC9PO-YvgBI99ukUS3Krj9ic7H4jNZMQ_KRIepS-wwazSOYpgTg8DG9uM3pry2ebVCaFHNe5ahyUb_cj77x"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent"></div>
+<div class="absolute bottom-0 p-10">
+<h3 class="font-headline text-2xl text-on-background mb-3">Lipo e Endolaser</h3>
+<p class="text-on-surface-variant text-sm mb-6">O contorno corporal definitivo com tecnologia laser de alta precisão.</p>
+<a class="text-primary font-label text-xs tracking-[0.1em] uppercase flex items-center gap-2" href="#">
+                            Explorar <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Grid Row 2 -->
+<div class="md:col-span-4 group relative overflow-hidden rounded-xl bg-surface-container-low h-[400px]">
+<div class="absolute top-8 left-8">
+<span class="material-symbols-outlined text-primary text-4xl mb-4">visibility</span>
+<h3 class="font-headline text-2xl text-on-background mb-2">Pálpebras e Lift</h3>
+<p class="text-on-surface-variant text-sm">Rejuvenescimento do olhar com precisão clínica absoluta.</p>
+</div>
+<div class="absolute bottom-8 left-8">
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">add_circle</span></a>
+</div>
+</div>
+<div class="md:col-span-4 group relative overflow-hidden rounded-xl bg-surface-container-high h-[400px]">
+<img class="absolute inset-0 w-full h-full object-cover opacity-40 group-hover:scale-105 transition-transform duration-700" data-alt="Professional medical staff hands in surgical gloves performing delicate procedure under golden light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAkP5rSnXmMSliPrXnzWsRnWf682NZDWm5XC85PnZZvUtwlmQx407XQd0yaSRnwapk_4e4cIpjtj2kfrET8RTC3zzuGaSgAMg9MK4_r4TNqBcOKdgmwmOyiMVSMYwr19SQ9ryYpD_76bL-JXb83IQd_DykbO8OEyMqmiLzSHBmLf-it859-044eLI4CsiJ82Ur36k_C6NENwFT2h0XIshW7Rt9HmRz4NJSp1DaIvcG9QKxAMwRJEogBf6c0WZV_gsK5gOX-02B9Qy7-"/>
+<div class="absolute inset-0 bg-surface-container-high/60"></div>
+<div class="relative p-8 h-full flex flex-col justify-end">
+<h3 class="font-headline text-2xl text-on-background mb-2">Citologia e Estética</h3>
+<p class="text-on-surface-variant text-sm">Diagnósticos e tratamentos faciais de alta performance baseados em ciência celular.</p>
+</div>
+</div>
+<div class="md:col-span-4 group relative overflow-hidden rounded-xl bg-surface-container-low h-[400px] flex items-center justify-center p-8 text-center border border-outline-variant/10">
+<div>
+<span class="material-symbols-outlined text-primary text-5xl mb-6">fitness_center</span>
+<h3 class="font-headline text-2xl text-on-background mb-3">Gordura e Flacidez</h3>
+<p class="text-on-surface-variant text-sm mb-6">Protocolos avançados para firmeza, definição e remodelamento tecidual.</p>
+<button class="border border-primary text-primary px-6 py-2 rounded font-label text-xs uppercase tracking-widest hover:bg-primary hover:text-on-primary transition-all">Agendar</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Overlapping Editorial Section -->
+<section class="py-24 relative overflow-hidden" id="sobre">
+<div class="container mx-auto px-8">
+<div class="flex flex-col lg:flex-row gap-16 items-center">
+<div class="lg:w-1/2 relative asymmetric-image-container">
+<img class="w-full aspect-[4/5] object-cover rounded-sm grayscale hover:grayscale-0 transition-all duration-1000 shadow-2xl" data-alt="Luxury modern medical clinic interior with dark walls, golden accents, and minimalist designer furniture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBi5CObe2HRT_iCmmKwTj0Z6U_y1vuGxcWFLaWiKnU6XBWsa-mxVcT_JZIhl4_wKxqkq7sySIu8Q7s_I6w3M06U7vSEYQpbbmLd_Ib1Bu88n8Qujr38gtE6iaOKpMf0PHeW9z7qM2ivy-JuJnuvwnT4Uq0RgVBTaqKBhSvBgcJE_2k29l4zvcVT_K-xf1R2KOK-mDm9N5_8nvLfmJmG5vL5zOxtMvMmGxWMNPOIHNdz6_N8KUVVXoL7uZwwvu-Jwgkb-oM7DLAbdIDF"/>
+<div class="absolute -bottom-6 -right-6 bg-primary p-8 hidden md:block">
+<p class="font-headline text-3xl text-on-primary leading-tight">Excelência <br/>em cada <br/>detalhe.</p>
+</div>
+</div>
+<div class="lg:w-1/2">
+<span class="font-label text-primary text-xs tracking-[0.2em] uppercase mb-6 block">Sobre o Instituto</span>
+<h2 class="font-headline text-5xl text-on-background mb-8 leading-tight">Ciência, Arte e <br/>Sofisticação.</h2>
+<p class="text-on-surface-variant text-lg leading-relaxed mb-8">
+                        Localizado no coração de Jequié, o IHFC é um centro de referência em harmonização de alta performance. Combinamos o que há de mais moderno na medicina estética com um ambiente acolhedor e luxuoso.
+                    </p>
+<div class="grid grid-cols-2 gap-8 mb-12">
+<div>
+<p class="text-primary font-headline text-3xl mb-2">10+</p>
+<p class="text-on-surface-variant text-xs uppercase tracking-widest">Anos de Experiência</p>
+</div>
+<div>
+<p class="text-primary font-headline text-3xl mb-2">5k+</p>
+<p class="text-on-surface-variant text-xs uppercase tracking-widest">Vidas Transformadas</p>
+</div>
+</div>
+<button class="gold-gradient-bg text-on-primary font-label text-xs tracking-[0.1em] uppercase px-8 py-4 rounded-lg font-bold">Conheça nossa história</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-[#131313] border-t-[0.5px] border-[#d4af37]/30 pt-20 pb-10" id="contato">
+<div class="max-w-7xl mx-auto px-8 grid grid-cols-1 md:grid-cols-3 gap-16 mb-20">
+<div>
+<div class="text-primary font-headline text-2xl mb-6">IHFC Jequié</div>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-8">
+                    Instituto de Harmonização Facial e Corporal. <br/>
+                    Elevando os padrões da estética em Jequié.
+                </p>
+<div class="flex gap-4">
+<a class="w-10 h-10 flex items-center justify-center rounded-full border border-outline-variant hover:border-primary text-on-surface-variant hover:text-primary transition-all" href="#">
+<span class="material-symbols-outlined text-xl">camera_alt</span>
+</a>
+<a class="w-10 h-10 flex items-center justify-center rounded-full border border-outline-variant hover:border-primary text-on-surface-variant hover:text-primary transition-all" href="#">
+<span class="material-symbols-outlined text-xl">share</span>
+</a>
+</div>
+</div>
+<div>
+<h4 class="font-label text-primary text-xs tracking-widest uppercase mb-8">Navegação</h4>
+<ul class="space-y-4">
+<li><a class="text-on-surface-variant hover:text-primary transition-colors text-sm" href="#">Especialidades</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors text-sm" href="#">Sobre Nós</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors text-sm" href="#">Agendamento</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors text-sm" href="#">Privacidade</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-label text-primary text-xs tracking-widest uppercase mb-8">Localização</h4>
+<p class="text-on-surface-variant text-sm leading-loose mb-6">
+                    Av. Exemplo de Luxo, 1000<br/>
+                    Centro, Jequié - BA<br/>
+                    CEP: 45200-000
+                </p>
+<a class="text-primary text-lg font-headline hover:opacity-80 transition-opacity" href="tel:+5573999999999">(73) 99999-9999</a>
+</div>
+</div>
+<div class="container mx-auto px-8">
+<div class="signature-line w-full mb-8"></div>
+<div class="flex flex-col md:flex-row justify-between items-center gap-4 text-xs font-label tracking-wide text-on-surface-variant/50">
+<p>© 2024 IHFC Jequié. Instituto de Harmonização Facial e Corporal.</p>
+<p>Desenvolvido com excelência técnica.</p>
+</div>
+</div>
+</footer>
+<!-- BottomNavBar for Mobile -->
+<nav class="md:hidden fixed bottom-0 left-0 right-0 glass-nav border-t border-[#d4af37]/15 z-50">
+<div class="flex justify-around items-center h-16">
+<a class="flex flex-col items-center gap-1 text-primary" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">medical_services</span>
+<span class="text-[10px] font-label uppercase tracking-tighter">Serviços</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-on-surface-variant" href="#">
+<span class="material-symbols-outlined">info</span>
+<span class="text-[10px] font-label uppercase tracking-tighter">Sobre</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-on-surface-variant" href="#">
+<span class="material-symbols-outlined">contact_support</span>
+<span class="text-[10px] font-label uppercase tracking-tighter">Contato</span>
+</a>
+</div>
+</nav>
+</body></html>
