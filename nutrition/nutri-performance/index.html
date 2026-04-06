@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@700;800;900&amp;family=Lexend:wght@300;400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "tertiary-dim": "#6f4700",
+                    "inverse-surface": "#0e0e0e",
+                    "on-secondary": "#fff0e9",
+                    "on-secondary-fixed-variant": "#853b00",
+                    "surface-bright": "#f9f6f5",
+                    "on-primary-fixed-variant": "#541800",
+                    "secondary-dim": "#833a00",
+                    "primary-fixed-dim": "#ff5e0f",
+                    "surface-container-high": "#e5e2e1",
+                    "on-surface": "#2f2e2e",
+                    "on-tertiary-container": "#503200",
+                    "error": "#b31b25",
+                    "on-background": "#2f2e2e",
+                    "tertiary-fixed-dim": "#ec9e10",
+                    "secondary-fixed-dim": "#ffb286",
+                    "on-secondary-container": "#773400",
+                    "tertiary-fixed": "#fcab23",
+                    "on-error-container": "#570008",
+                    "surface-tint": "#a33700",
+                    "on-primary": "#ffefeb",
+                    "background": "#f9f6f5",
+                    "primary-container": "#ff7943",
+                    "outline": "#787676",
+                    "tertiary-container": "#fcab23",
+                    "surface": "#f9f6f5",
+                    "on-tertiary": "#fff0e2",
+                    "on-error": "#ffefee",
+                    "on-tertiary-fixed-variant": "#5c3a00",
+                    "surface-container-highest": "#dfdcdc",
+                    "surface-dim": "#d6d4d3",
+                    "primary-dim": "#8f2f00",
+                    "on-primary-container": "#441200",
+                    "on-tertiary-fixed": "#331f00",
+                    "inverse-primary": "#fd5900",
+                    "error-container": "#fb5151",
+                    "surface-container": "#ebe7e7",
+                    "primary": "#a33700",
+                    "secondary-fixed": "#ffc5a6",
+                    "surface-variant": "#dfdcdc",
+                    "surface-container-lowest": "#ffffff",
+                    "primary-fixed": "#ff7943",
+                    "on-secondary-fixed": "#592500",
+                    "secondary": "#964300",
+                    "outline-variant": "#afacac",
+                    "secondary-container": "#ffc5a6",
+                    "on-primary-fixed": "#000000",
+                    "error-dim": "#9f0519",
+                    "surface-container-low": "#f3f0ef",
+                    "inverse-on-surface": "#9e9c9c",
+                    "on-surface-variant": "#5c5b5b",
+                    "tertiary": "#7f5200"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0px",
+                    "lg": "0px",
+                    "xl": "0px",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Epilogue"],
+                    "body": ["Lexend"],
+                    "label": ["Lexend"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .kinetic-angle {
+            clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+        }
+        .kinetic-angle-reverse {
+            clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body overflow-x-hidden">
+<!-- TopNavBar -->
+<nav class="bg-white/80 dark:bg-zinc-950/80 backdrop-blur-xl docked full-width top-0 z-50 fixed w-full border-b-0">
+<div class="flex justify-between items-center w-full px-6 py-4 max-w-7xl mx-auto">
+<span class="text-2xl font-black italic tracking-tighter text-zinc-900 dark:text-white uppercase font-['Epilogue']">KINETIC NUTRITION</span>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-orange-700 dark:text-orange-500 border-b-4 border-orange-700 font-['Epilogue'] font-black uppercase tracking-tighter hover:text-orange-600 transition-colors duration-200" href="#">Sobre</a>
+<a class="text-zinc-600 dark:text-zinc-400 font-['Epilogue'] font-black uppercase tracking-tighter hover:text-orange-600 transition-colors duration-200" href="#">Serviços</a>
+<a class="text-zinc-600 dark:text-zinc-400 font-['Epilogue'] font-black uppercase tracking-tighter hover:text-orange-600 transition-colors duration-200" href="#">Planos</a>
+<a class="text-zinc-600 dark:text-zinc-400 font-['Epilogue'] font-black uppercase tracking-tighter hover:text-orange-600 transition-colors duration-200" href="#">Contato</a>
+</div>
+<button class="bg-primary text-on-primary px-6 py-2 font-['Epilogue'] font-black uppercase tracking-tighter scale-95 active:scale-90 transition-transform">
+                MARCAR CONSULTA
+            </button>
+</div>
+</nav>
+<!-- Hero Section -->
+<header class="relative min-h-screen flex items-center pt-20 bg-inverse-surface overflow-hidden kinetic-angle">
+<div class="absolute inset-0 z-0 opacity-40">
+<img alt="Athlete in motion" class="w-full h-full object-cover" data-alt="dramatic action shot of a professional athlete sprinting on a dark track with intense overhead lighting and smoke effects" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAowvUuuGanPTXytezxGBNH8hvSEiVdult7sEN4TVcb9L2BNFKhmFdMJACIgZliAdCH_0Fbp5Lz3SGk2xr8tDr0XRX51azacoydbr1qSTiX826olfBneaZHLzpmXcQun5TyUJx_N-WSEWytvs5-Da5K4_lRy9mbWly8jZuD9OZhGHOPs0s97xT2lsFEBWjgBdhFdLjYrLI77axPVmDsute8k62CL3AIAUhtRefum-AwcUNXpTH8_fskQ07rLNEcr8INYiLIcPr1uAax"/>
+</div>
+<div class="absolute inset-0 bg-gradient-to-r from-inverse-surface via-inverse-surface/80 to-transparent z-10"></div>
+<!-- Watermark Typography -->
+<div class="absolute -bottom-10 -left-10 text-[20rem] font-headline font-black text-white/5 select-none leading-none z-0">
+            PERFORMANCE
+        </div>
+<div class="container mx-auto px-6 relative z-20 flex flex-col items-start">
+<span class="bg-primary text-on-primary px-4 py-1 font-headline font-bold uppercase tracking-widest text-sm mb-6">FUEL YOUR AMBITION</span>
+<h1 class="text-6xl md:text-9xl font-headline font-black text-white leading-none tracking-tighter uppercase mb-8">
+                POTENCIALIZE SUA <br/> <span class="text-primary-fixed">PERFORMANCE</span>
+</h1>
+<p class="text-xl md:text-2xl text-surface-container-high max-w-2xl mb-12 font-light tracking-tight">
+                Nutrição estratégica de elite para atletas que não aceitam nada menos que o ápice. Transforme seu metabolismo em uma máquina de alto rendimento.
+            </p>
+<div class="flex flex-col sm:flex-row gap-4">
+<button class="bg-primary text-on-primary px-10 py-5 text-xl font-headline font-black uppercase tracking-tighter hover:bg-primary-dim transition-all active:scale-95">
+                    COMECE AGORA
+                </button>
+<button class="border-4 border-white text-white px-10 py-5 text-xl font-headline font-black uppercase tracking-tighter hover:bg-white hover:text-inverse-surface transition-all active:scale-95">
+                    VER RESULTADOS
+                </button>
+</div>
+</div>
+</header>
+<!-- Metrics Section -->
+<section class="py-24 bg-surface">
+<div class="container mx-auto px-6">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+<!-- Metric 1 -->
+<div class="group">
+<div class="flex items-center gap-4 mb-6">
+<span class="material-symbols-outlined text-5xl text-primary font-bold" data-icon="fitness_center">fitness_center</span>
+<h3 class="text-3xl font-headline font-black uppercase tracking-tighter">Ganho de Massa</h3>
+</div>
+<div class="bg-surface-container-low p-8 relative overflow-hidden">
+<div class="text-6xl font-headline font-black text-primary mb-2">+24%</div>
+<p class="text-on-surface-variant font-medium">Aumento médio em hipertrofia funcional nos primeiros 90 dias de protocolo.</p>
+<div class="absolute right-0 bottom-0 w-24 h-24 bg-primary/5 -mr-8 -mb-8 rotate-45"></div>
+</div>
+</div>
+<!-- Metric 2 -->
+<div class="group">
+<div class="flex items-center gap-4 mb-6">
+<span class="material-symbols-outlined text-5xl text-primary font-bold" data-icon="bolt">bolt</span>
+<h3 class="text-3xl font-headline font-black uppercase tracking-tighter">Recuperação Rápida</h3>
+</div>
+<div class="bg-surface-container-low p-8 relative overflow-hidden">
+<div class="text-6xl font-headline font-black text-primary mb-2">-40%</div>
+<p class="text-on-surface-variant font-medium">Redução no tempo de recuperação entre treinos de alta intensidade.</p>
+<div class="absolute right-0 bottom-0 w-24 h-24 bg-primary/5 -mr-8 -mb-8 rotate-45"></div>
+</div>
+</div>
+<!-- Metric 3 -->
+<div class="group">
+<div class="flex items-center gap-4 mb-6">
+<span class="material-symbols-outlined text-5xl text-primary font-bold" data-icon="psychology">psychology</span>
+<h3 class="text-3xl font-headline font-black uppercase tracking-tighter">Foco Mental</h3>
+</div>
+<div class="bg-surface-container-low p-8 relative overflow-hidden">
+<div class="text-6xl font-headline font-black text-primary mb-2">MAX</div>
+<p class="text-on-surface-variant font-medium">Otimização cognitiva através de micronutrientes específicos para clareza mental.</p>
+<div class="absolute right-0 bottom-0 w-24 h-24 bg-primary/5 -mr-8 -mb-8 rotate-45"></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Bento Grid Gallery -->
+<section class="py-24 bg-surface-container-low">
+<div class="container mx-auto px-6">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+<div>
+<span class="text-primary font-headline font-bold uppercase tracking-widest text-sm">FUEL YOUR BODY</span>
+<h2 class="text-5xl md:text-7xl font-headline font-black uppercase tracking-tighter leading-none mt-2">NUTRIÇÃO QUE <br/> IMPULSIONA</h2>
+</div>
+<p class="max-w-md text-on-surface-variant text-lg">Planos alimentares que unem alta gastronomia e precisão biológica. Cada caloria é um investimento na sua vitória.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 grid-rows-2 gap-4 h-auto md:h-[800px]">
+<div class="md:col-span-2 md:row-span-2 relative group overflow-hidden bg-zinc-300">
+<img alt="Meal prep" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 scale-105 group-hover:scale-110" data-alt="professional overhead shot of colorful gourmet meal prep containers with grilled salmon, quinoa, and vibrant vegetables on a dark slate background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB9UP_AvmiTHp0g2mYBGs_OdAstzepr5dApVcUbRfncHVh8g5SHaK29j8x-lKvKXJgtJPgNTiYgKJYdLVvs9d6FCTdcmTBcaTrBpv0-6OIGdTyVl9v1zWhhTWBGqqo7vi1tmr4Tl1he252PLRBvnsgTkFIjJYPErDfOuxK-1GupAi0ooimnnxjel4pmzZb7LSj1Ds1mS-wt3OUaAS3gL_eGvHvivKQKDsVdTIhYCu65YQ09_YUO7la0RBBLCz6kxXxt5CzCHh0lme1P"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex flex-col justify-end p-8">
+<span class="text-primary font-headline font-bold text-sm uppercase">CORE PERFORMANCE</span>
+<h4 class="text-white text-3xl font-headline font-black uppercase">Planos de Refeição Customizados</h4>
+</div>
+</div>
+<div class="md:col-span-2 md:row-span-1 relative group overflow-hidden bg-zinc-300">
+<img alt="Healthy bowl" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 scale-105 group-hover:scale-110" data-alt="vibrant healthy Buddha bowl with avocado, chickpeas, and fresh greens in bright natural morning light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCebhemMB-WGAeAdiW2naAn2rSsQFxiZ1AAgt4GG2EeH5eYFycwILYTz7NP2iCXyDiRNqHtSSrOsiFg1IMio4oQfbCqpUrKgFqSpNVg9tqECh-ECYKlM-eg4Jws78oP2R3kUECqwFd0BG0KmisP7pXWOOD8FODdBiXt3vF2NwOlB1WEDSgiW2v2ZIj2yYxko8mI0TwjIalZHD_cx1aS8eVzHAqLgQzEpKHe_Kv1Oj0AMp1pO5joFTIEs09675x2dpN94I7FojPIrsKW"/>
+<div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<span class="bg-primary text-on-primary px-6 py-3 font-headline font-black uppercase">VER RECEITA</span>
+</div>
+</div>
+<div class="md:col-span-1 md:row-span-1 relative group overflow-hidden bg-zinc-300">
+<img alt="Supplements" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 scale-105 group-hover:scale-110" data-alt="aesthetic arrangement of high-quality protein powder and athletic supplements on a minimalist white surface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCMStBJb84osifKHax1M6v00yf-IOCpnaX1cMiukRWtXSeAYmNiDuuUUBHYha4eoCXQBXHGkvwlxi0hLxmxh0mpOUDLuiUeCHGWVQi7-N30wFOF6x_Afeq0zH1o9DR8k9ggSFXZJXkBRD7lFf12B0rKAx2b511AQJHt5yy57KRZMSKQqz_0IyrrF7T_CIH9BLI8I1nj8LMyocuBi6A94ZBqYCqzqdmzT5-hQRWbss94QIU0R3HuxEXbQ0HcM0zeac-fPv0Me85XDWnM"/>
+</div>
+<div class="md:col-span-1 md:row-span-1 relative group overflow-hidden bg-zinc-300">
+<img alt="Fruit energy" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 scale-105 group-hover:scale-110" data-alt="close-up of fresh organic berries and citrus fruit with water droplets, signifying vitality and vitamins" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB2wcH6ejxks3pyWqrbj-DdnJNPOoZItGVRGPFsm44kYJu4MbZN1cT3T_K1ocKX9i1vTPOWtBy6-o23GY-OFsT-k4n-hfStB6Baa44GXJ2Jtmj3q1NZ20nFUn38eGckQ5hBTpd1a6vOxQDVBsJONWUWLE2wWwazk3VjnNOFQdVyVU11LYH8gG_PoLUaRBHTdDARLiBWSHgeimHqa-ltsl-JcwTv42jvqh_bMoz_hIPUG47SdQ3Vy1tnKjs_1nOEY2cnJ9wBvCcf58uz"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Plans Section -->
+<section class="py-24 bg-inverse-surface text-white kinetic-angle-reverse">
+<div class="container mx-auto px-6">
+<div class="text-center mb-20">
+<h2 class="text-5xl md:text-7xl font-headline font-black uppercase tracking-tighter">ESCOLHA SEU <span class="text-primary-fixed">NÍVEL</span></h2>
+<p class="text-surface-container-high mt-4 text-xl font-light">Protocolos desenhados para resultados mensuráveis.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-1">
+<!-- Plan Básico -->
+<div class="bg-zinc-900 p-12 flex flex-col border-b-4 border-zinc-800 md:border-b-0 hover:border-primary-fixed transition-colors">
+<h3 class="text-2xl font-headline font-black uppercase mb-2">BÁSICO</h3>
+<div class="text-5xl font-headline font-black text-primary-fixed mb-8">R$ 290<span class="text-lg text-white/50">/mês</span></div>
+<ul class="space-y-4 mb-12 flex-grow">
+<li class="flex items-center gap-3"><span class="material-symbols-outlined text-primary-fixed" data-icon="check">check</span>Plano Nutricional Mensal</li>
+<li class="flex items-center gap-3"><span class="material-symbols-outlined text-primary-fixed" data-icon="check">check</span>Cálculo de Macronutrientes</li>
+<li class="flex items-center gap-3"><span class="material-symbols-outlined text-zinc-600" data-icon="close">close</span>Suporte Via WhatsApp</li>
+<li class="flex items-center gap-3"><span class="material-symbols-outlined text-zinc-600" data-icon="close">close</span>Análise de Exames</li>
+</ul>
+<button class="w-full py-4 border-2 border-white font-headline font-black uppercase tracking-tighter hover:bg-white hover:text-black transition-all">SELECIONAR</button>
+</div>
+<!-- Plan Performance -->
+<div class="bg-primary p-12 flex flex-col relative scale-105 z-10">
+<div class="absolute top-0 right-0 bg-white text-primary px-4 py-1 font-headline font-bold text-xs uppercase">MAIS POPULAR</div>
+<h3 class="text-2xl font-headline font-black uppercase mb-2 text-on-primary">PERFORMANCE</h3>
+<div class="text-5xl font-headline font-black text-on-primary mb-8">R$ 550<span class="text-lg text-on-primary/60">/mês</span></div>
+<ul class="space-y-4 mb-12 flex-grow text-on-primary">
+<li class="flex items-center gap-3"><span class="material-symbols-outlined" data-icon="check" style="font-variation-settings: 'FILL' 1;">check</span>Plano Nutricional Quinzenal</li>
+<li class="flex items-center gap-3"><span class="material-symbols-outlined" data-icon="check" style="font-variation-settings: 'FILL' 1;">check</span>Suporte WhatsApp 24/7</li>
+<li class="flex items-center gap-3"><span class="material-symbols-outlined" data-icon="check" style="font-variation-settings: 'FILL' 1;">check</span>Guia de Suplementação</li>
+<li class="flex items-center gap-3"><span class="material-symbols-outlined" data-icon="check" style="font-variation-settings: 'FILL' 1;">check</span>Análise de Bioimpedância</li>
+</ul>
+<button class="w-full py-4 bg-inverse-surface text-white font-headline font-black uppercase tracking-tighter hover:bg-zinc-800 transition-all">SELECIONAR</button>
+</div>
+<!-- Plan Elite -->
+<div class="bg-zinc-900 p-12 flex flex-col border-b-4 border-zinc-800 md:border-b-0 hover:border-primary-fixed transition-colors">
+<h3 class="text-2xl font-headline font-black uppercase mb-2">ELITE</h3>
+<div class="text-5xl font-headline font-black text-primary-fixed mb-8">R$ 980<span class="text-lg text-white/50">/mês</span></div>
+<ul class="space-y-4 mb-12 flex-grow">
+<li class="flex items-center gap-3"><span class="material-symbols-outlined text-primary-fixed" data-icon="check">check</span>Consultoria Semanal</li>
+<li class="flex items-center gap-3"><span class="material-symbols-outlined text-primary-fixed" data-icon="check">check</span>Acompanhamento de Exames</li>
+<li class="flex items-center gap-3"><span class="material-symbols-outlined text-primary-fixed" data-icon="check">check</span>Ajuste Diário Dinâmico</li>
+<li class="flex items-center gap-3"><span class="material-symbols-outlined text-primary-fixed" data-icon="check">check</span>Suporte em Competições</li>
+</ul>
+<button class="w-full py-4 border-2 border-white font-headline font-black uppercase tracking-tighter hover:bg-white hover:text-black transition-all">SELECIONAR</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Final CTA -->
+<section class="py-32 bg-surface overflow-hidden relative">
+<div class="container mx-auto px-6 text-center relative z-10">
+<h2 class="text-6xl md:text-8xl font-headline font-black uppercase tracking-tighter leading-none mb-8">
+                VOCÊ ESTÁ PRONTO PARA <br/> O SEU <span class="text-primary italic">PRÓXIMO NÍVEL?</span>
+</h2>
+<p class="text-2xl font-light text-on-surface-variant max-w-3xl mx-auto mb-12">Não deixe sua performance ao acaso. Agende sua consulta inicial hoje e comece a construir sua melhor versão.</p>
+<button class="bg-inverse-surface text-white px-16 py-6 text-2xl font-headline font-black uppercase tracking-widest hover:bg-primary transition-all active:scale-90">
+                AGENDAR CONSULTA AGORA
+            </button>
+</div>
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full text-center opacity-5 pointer-events-none">
+<span class="text-[30rem] font-headline font-black uppercase leading-none">ELITE</span>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-zinc-900 dark:bg-black w-full px-8 py-12 flex flex-col md:flex-row justify-between items-center gap-8 border-t-4 border-orange-700">
+<div class="flex flex-col items-center md:items-start gap-2">
+<span class="text-xl font-black text-white uppercase font-headline">KINETIC NUTRITION</span>
+<p class="text-zinc-400 font-['Lexend'] text-sm tracking-tight">© 2024 KINETIC NUTRITION. POTENCIALIZE SUA PERFORMANCE.</p>
+</div>
+<div class="flex gap-8">
+<a class="text-zinc-400 hover:text-white transition-colors font-['Lexend'] text-sm tracking-tight" href="#">Instagram</a>
+<a class="text-zinc-400 hover:text-white transition-colors font-['Lexend'] text-sm tracking-tight" href="#">YouTube</a>
+<a class="text-zinc-400 hover:text-white transition-colors font-['Lexend'] text-sm tracking-tight" href="#">Privacidade</a>
+<a class="text-zinc-400 hover:text-white transition-colors font-['Lexend'] text-sm tracking-tight" href="#">Termos de Uso</a>
+</div>
+<div class="text-orange-500 font-bold uppercase tracking-widest text-xs">
+            Performance. Precision. Power.
+        </div>
+</footer>
+</body></html>
