@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&amp;family=Manrope:wght@300;400;600;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "tertiary": "#c8c6c5",
+                    "on-error-container": "#ffdad6",
+                    "on-secondary-fixed": "#2b1611",
+                    "tertiary-fixed": "#e4e2e1",
+                    "surface": "#131313",
+                    "inverse-primary": "#775a19",
+                    "surface-bright": "#393939",
+                    "on-secondary-container": "#d2ada4",
+                    "secondary-fixed": "#ffdad2",
+                    "on-tertiary-fixed-variant": "#474747",
+                    "on-surface": "#e5e2e1",
+                    "inverse-on-surface": "#313030",
+                    "tertiary-fixed-dim": "#c8c6c5",
+                    "surface-container-highest": "#353534",
+                    "inverse-surface": "#e5e2e1",
+                    "surface-dim": "#131313",
+                    "outline": "#9a8f80",
+                    "secondary-fixed-dim": "#e5beb5",
+                    "on-primary-container": "#4e3700",
+                    "surface-container": "#201f1f",
+                    "on-tertiary": "#303030",
+                    "surface-container-high": "#2a2a2a",
+                    "on-secondary": "#432a25",
+                    "surface-container-lowest": "#0e0e0e",
+                    "secondary-container": "#5c403a",
+                    "on-error": "#690005",
+                    "outline-variant": "#4e4639",
+                    "surface-container-low": "#1c1b1b",
+                    "on-tertiary-container": "#3b3b3b",
+                    "on-secondary-fixed-variant": "#5c403a",
+                    "primary-fixed-dim": "#e9c176",
+                    "surface-tint": "#e9c176",
+                    "primary-fixed": "#ffdea5",
+                    "tertiary-container": "#a7a5a5",
+                    "background": "#131313",
+                    "primary-container": "#c5a059",
+                    "on-primary": "#412d00",
+                    "error": "#ffb4ab",
+                    "primary": "#e9c176",
+                    "on-background": "#e5e2e1",
+                    "error-container": "#93000a",
+                    "on-tertiary-fixed": "#1b1c1c",
+                    "on-primary-fixed-variant": "#5d4201",
+                    "secondary": "#e5beb5",
+                    "on-surface-variant": "#d1c5b4",
+                    "on-primary-fixed": "#261900",
+                    "surface-variant": "#353534"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Noto Serif"],
+                    "body": ["Manrope"],
+                    "label": ["Manrope"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Manrope', sans-serif; background-color: #131313; color: #e5e2e1; }
+        .font-serif { font-family: 'Noto Serif', serif; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24; }
+        .metallic-cta { background: linear-gradient(135deg, #e9c176 0%, #c5a059 100%); }
+        .ghost-border { border-bottom: 1px solid rgba(154, 143, 128, 0.2); }
+        .ghost-border:focus-within { border-bottom: 1px solid #e9c176; }
+    </style>
+</head>
+<body class="bg-background text-on-background selection:bg-primary selection:text-on-primary">
+<!-- Top Navigation -->
+<nav class="fixed top-0 w-full z-50 bg-[#131313]/60 backdrop-blur-md flex justify-between items-center px-8 py-4 max-w-full mx-auto">
+<div class="text-2xl font-serif text-[#e9c176] tracking-tighter">NOCTURNAL</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="font-['Noto_Serif'] font-bold tracking-tight text-[#e9c176] border-b-2 border-[#e9c176] pb-1" href="#">Início</a>
+<a class="font-['Noto_Serif'] font-bold tracking-tight text-[#d1c5b4] hover:text-[#e9c176] transition-colors" href="#menu">Menu</a>
+<a class="font-['Noto_Serif'] font-bold tracking-tight text-[#d1c5b4] hover:text-[#e9c176] transition-colors" href="#atmosfera">Sobre</a>
+<a class="font-['Noto_Serif'] font-bold tracking-tight text-[#d1c5b4] hover:text-[#e9c176] transition-colors" href="#reservas">Reservas</a>
+</div>
+<button class="metallic-cta text-on-primary px-6 py-2 text-sm font-bold tracking-widest uppercase transition-transform active:scale-95 duration-200">
+            Reserve Agora
+        </button>
+</nav>
+<!-- Hero Section -->
+<header class="relative h-screen flex items-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img alt="Fine dining presentation" class="w-full h-full object-cover opacity-60 scale-105" data-alt="Close-up of a sophisticated gourmet dish with edible flowers and artisan sauce on a dark ceramic plate with dramatic moody side lighting" src="https://images.pexels.com/photos/29122096/pexels-photo-29122096.jpeg"/>
+<div class="absolute inset-0 bg-gradient-to-r from-background via-transparent to-transparent"></div>
+</div>
+<div class="relative z-10 px-12 md:px-24 max-w-4xl">
+<span class="font-label text-primary tracking-[0.3em] uppercase text-sm mb-6 block">Sommelier Experience</span>
+<h1 class="font-headline text-5xl md:text-8xl font-bold leading-tight tracking-tight mb-8">
+                Experiência Gastronômica <br/> <span class="italic text-primary-fixed-dim">Inesquecível</span>
+</h1>
+<p class="font-body text-on-surface-variant text-lg md:text-xl max-w-xl mb-12 leading-relaxed">
+                Uma jornada sensorial onde a alta gastronomia encontra a atmosfera noturna perfeita. Saboreie o extraordinário em cada detalhe.
+            </p>
+<div class="flex flex-col sm:flex-row gap-6">
+<a class="metallic-cta text-on-primary px-10 py-4 text-center font-bold tracking-widest uppercase hover:opacity-90 transition-opacity" href="#reservas">
+                    Reservar Mesa
+                </a>
+<a class="group flex items-center gap-3 text-primary font-bold tracking-widest uppercase border-b border-transparent hover:border-primary transition-all pb-1" href="#menu">
+                    Descubra o Menu
+                    <span class="material-symbols-outlined transition-transform group-hover:translate-x-2">arrow_forward</span>
+</a>
+</div>
+</div>
+</header>
+<!-- Menu Degustação Section -->
+<section class="py-32 bg-surface" id="menu">
+<div class="container mx-auto px-8">
+<div class="flex flex-col md:flex-row justify-between items-end mb-24 gap-8">
+<div class="max-w-2xl">
+<h2 class="font-headline text-4xl md:text-6xl font-bold tracking-tight mb-6">Menu Degustação</h2>
+<p class="font-body text-on-surface-variant text-lg">Uma curadoria sazonal dos nossos ingredientes mais nobres, preparada com técnicas ancestrais e toques de modernidade.</p>
+</div>
+<div class="text-right">
+<span class="font-label text-primary tracking-[0.2em] uppercase block mb-2">Preço por Pessoa</span>
+<span class="font-headline text-4xl text-on-surface">R$ 580</span>
+</div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-x-20 gap-y-16">
+<!-- Menu Item 1 -->
+<div class="group flex gap-8 items-start">
+<div class="w-32 h-32 flex-shrink-0 bg-surface-container-low overflow-hidden">
+<img alt="Entrada" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Macro photography of a fresh oyster with golden flakes and citrus foam, served on a bed of dark sea salt" src="https://images.pexels.com/photos/16530532/pexels-photo-16530532.jpeg"/>
+</div>
+<div class="flex-grow pt-2">
+<div class="flex justify-between items-baseline mb-3">
+<h3 class="font-headline text-2xl font-bold text-on-surface group-hover:text-primary transition-colors">Ostras da Costa</h3>
+</div>
+<p class="font-body text-on-surface-variant leading-relaxed">Ostras frescas de cultivo sustentável, espuma de limão siciliano, pérolas de pepino e toque de azeite trufado.</p>
+</div>
+</div>
+<!-- Menu Item 2 -->
+<div class="group flex gap-8 items-start">
+<div class="w-32 h-32 flex-shrink-0 bg-surface-container-low overflow-hidden">
+<img alt="Prato Principal" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Perfectly seared wagyu beef slice with red wine reduction and truffle potato puree on a designer black plate" src="https://images.pexels.com/photos/6487798/pexels-photo-6487798.jpeg"/>
+</div>
+<div class="flex-grow pt-2">
+<div class="flex justify-between items-baseline mb-3">
+<h3 class="font-headline text-2xl font-bold text-on-surface group-hover:text-primary transition-colors">Wagyu &amp; Trufas</h3>
+</div>
+<p class="font-body text-on-surface-variant leading-relaxed">Corte nobre A5 braseado, mousseline de batatas rústicas com trufas negras e redução de vinho do Porto.</p>
+</div>
+</div>
+<!-- Menu Item 3 -->
+<div class="group flex gap-8 items-start">
+<div class="w-32 h-32 flex-shrink-0 bg-surface-container-low overflow-hidden">
+<img alt="Frutos do Mar" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Seared scallops with saffron sauce and delicate microgreens on a minimalist charcoal plate" src="https://images.pexels.com/photos/8321980/pexels-photo-8321980.jpeg"/>
+</div>
+<div class="flex-grow pt-2">
+<div class="flex justify-between items-baseline mb-3">
+<h3 class="font-headline text-2xl font-bold text-on-surface group-hover:text-primary transition-colors">Vieiras ao Açafrão</h3>
+</div>
+<p class="font-body text-on-surface-variant leading-relaxed">Vieiras canadenses seladas na manteiga de sálvia, velouté de açafrão iraniano e brotos orgânicos.</p>
+</div>
+</div>
+<!-- Menu Item 4 -->
+<div class="group flex gap-8 items-start">
+<div class="w-32 h-32 flex-shrink-0 bg-surface-container-low overflow-hidden">
+<img alt="Sobremesa" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Deconstructed dark chocolate dessert with gold leaf, raspberry coulis and smoked vanilla gelato" src="https://images.pexels.com/photos/9810298/pexels-photo-9810298.jpeg"/>
+</div>
+<div class="flex-grow pt-2">
+<div class="flex justify-between items-baseline mb-3">
+<h3 class="font-headline text-2xl font-bold text-on-surface group-hover:text-primary transition-colors">Noturno de Chocolate</h3>
+</div>
+<p class="font-body text-on-surface-variant leading-relaxed">Texturas de chocolate 70%, flor de sal, gel de framboesa e fumaça de carvalho para uma finalização épica.</p>
+</div>
+</div>
+</div>
+<div class="mt-24 text-center">
+<button class="font-label text-primary-fixed-dim border border-primary-container/30 px-12 py-5 uppercase tracking-[0.2em] text-xs hover:bg-primary-container/10 transition-colors">
+                    Ver Menu Completo de Vinhos
+                </button>
+</div>
+</div>
+</section>
+<!-- Nossa Atmosfera Section -->
+<section class="bg-surface-container-low py-32 overflow-hidden" id="atmosfera">
+<div class="container mx-auto px-8">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<div class="lg:col-span-5 order-2 lg:order-1">
+<span class="font-label text-primary tracking-[0.3em] uppercase text-sm mb-6 block">O Cenário</span>
+<h2 class="font-headline text-4xl md:text-5xl font-bold leading-tight mb-8">Onde a Noite Encontra a Elegância</h2>
+<p class="font-body text-on-surface-variant text-lg leading-relaxed mb-8">
+                        Luzes baixas, o som suave do jazz e o brilho das velas refletido no cristal. Criamos um refúgio para conversas memoráveis e descobertas palatáveis.
+                    </p>
+<div class="grid grid-cols-2 gap-8 py-8 border-y border-outline-variant/20">
+<div>
+<span class="font-headline text-3xl text-primary block mb-2">42</span>
+<span class="font-label text-xs uppercase tracking-widest text-on-surface-variant">Lugares Exclusivos</span>
+</div>
+<div>
+<span class="font-headline text-3xl text-primary block mb-2">1200</span>
+<span class="font-label text-xs uppercase tracking-widest text-on-surface-variant">Rótulos na Adega</span>
+</div>
+</div>
+</div>
+<div class="lg:col-span-7 order-1 lg:order-2">
+<div class="relative flex flex-col gap-4">
+<div class="flex gap-4">
+<img alt="Restaurant Interior" class="w-1/2 aspect-[4/5] object-cover" data-alt="Interior of a luxury restaurant with dark velvet chairs, warm candle lighting on tables, and a professional wine cellar wall in the background" src="assets/interior.jpg"/>
+<img alt="Wine Service" class="w-1/2 aspect-[4/5] object-cover mt-12" data-alt="Sommelier pouring red wine into a crystal glass in a dimly lit, atmospheric dining room" src="assets/service.jpg"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Reservas Section -->
+<section class="py-32 bg-surface relative" id="reservas">
+<div class="container mx-auto px-8 max-w-5xl">
+<div class="bg-surface-container-lowest p-12 md:p-20 relative z-10">
+<div class="text-center mb-16">
+<h2 class="font-headline text-4xl md:text-5xl font-bold mb-4">Garanta sua Mesa</h2>
+<p class="font-body text-on-surface-variant uppercase tracking-widest text-sm">Disponibilidade limitada para experiências exclusivas</p>
+</div>
+<form class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-10">
+<div class="ghost-border group">
+<label class="block font-label text-[10px] uppercase tracking-widest text-primary mb-2">Nome Completo</label>
+<input class="w-full bg-transparent border-none p-0 focus:ring-0 text-on-surface placeholder:text-outline-variant font-body" placeholder="Seu nome" type="text"/>
+</div>
+<div class="ghost-border group">
+<label class="block font-label text-[10px] uppercase tracking-widest text-primary mb-2">E-mail</label>
+<input class="w-full bg-transparent border-none p-0 focus:ring-0 text-on-surface placeholder:text-outline-variant font-body" placeholder="seu@email.com" type="email"/>
+</div>
+<div class="ghost-border group">
+<label class="block font-label text-[10px] uppercase tracking-widest text-primary mb-2">Data da Reserva</label>
+<input class="w-full bg-transparent border-none p-0 focus:ring-0 text-on-surface placeholder:text-outline-variant font-body" type="date"/>
+</div>
+<div class="ghost-border group">
+<label class="block font-label text-[10px] uppercase tracking-widest text-primary mb-2">Número de Convidados</label>
+<select class="w-full bg-transparent border-none p-0 focus:ring-0 text-on-surface font-body">
+<option value="1">1 Pessoa</option>
+<option value="2">2 Pessoas</option>
+<option value="4">4 Pessoas</option>
+<option value="6">6 Pessoas</option>
+</select>
+</div>
+<div class="md:col-span-2 ghost-border group">
+<label class="block font-label text-[10px] uppercase tracking-widest text-primary mb-2">Observações Especiais</label>
+<textarea class="w-full bg-transparent border-none p-0 focus:ring-0 text-on-surface placeholder:text-outline-variant font-body resize-none" placeholder="Alergias ou celebrações..." rows="1"></textarea>
+</div>
+<div class="md:col-span-2 pt-8">
+<button class="w-full metallic-cta text-on-primary py-5 font-bold tracking-[0.3em] uppercase text-sm hover:scale-[1.02] transition-transform" type="submit">
+                            Solicitar Reserva
+                        </button>
+</div>
+</form>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-[#1c1b1b] border-t border-[#353534]/20 flex flex-col md:flex-row justify-between items-center px-12 py-16 w-full">
+<div class="mb-8 md:mb-0">
+<div class="text-lg font-serif text-[#c5a059] mb-2 uppercase tracking-tighter">Nocturnal Sommelier</div>
+<div class="text-[#d1c5b4] font-['Manrope'] text-xs tracking-widest uppercase">Gastronomia Autoral</div>
+</div>
+<div class="flex flex-wrap justify-center gap-8 mb-8 md:mb-0">
+<a class="font-['Manrope'] text-sm tracking-widest uppercase text-[#d1c5b4] hover:text-[#e9c176] transition-colors" href="#">Instagram</a>
+<a class="font-['Manrope'] text-sm tracking-widest uppercase text-[#d1c5b4] hover:text-[#e9c176] transition-colors" href="#">Facebook</a>
+<a class="font-['Manrope'] text-sm tracking-widest uppercase text-[#d1c5b4] hover:text-[#e9c176] transition-colors" href="#">Contato</a>
+<a class="font-['Manrope'] text-sm tracking-widest uppercase text-[#d1c5b4] hover:text-[#e9c176] transition-colors" href="#">Privacidade</a>
+</div>
+<div class="text-center md:text-right">
+<p class="font-['Manrope'] text-[10px] tracking-widest uppercase text-[#d1c5b4]/50 leading-loose">
+                Rua das Estrelas, 100 — Jardins, SP<br/>
+                © 2024 Nocturnal Sommelier. Todos os direitos reservados.
+            </p>
+</div>
+</footer>
+</body></html>
